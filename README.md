@@ -18,4 +18,11 @@ AWS.config.update({
 
 // Overview
 // The script visits multiple pages of a job listing website, extracts job details using Puppeteer,
-// saves them to DynamoDB, and exports them to a JSON file.
+// saves them to DynamoDB, and exports them to a JSON file.# Overview
+
+The script follows these steps to scrape job details:
+
+1. It launches a Puppeteer browser and navigates to the job listing website.
+2. It iterates through the pages of job listings and extracts job details such as company name, job title, and URL.
+3. For each job, it navigates to the job URL and extracts additional details such as job description, company URL, and company logo URL.
+4. It saves the extracted job details to both DynamoDB and a JSON file.
